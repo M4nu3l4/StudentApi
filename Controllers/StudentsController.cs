@@ -1,4 +1,4 @@
-﻿// Controllers/StudentsController.cs
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentApi.Data;
@@ -17,14 +17,12 @@ namespace StudentApi.Controllers
             _context = context;
         }
 
-        // GET: api/Students
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
             return await _context.Students.ToListAsync();
         }
 
-        // POST: api/Students
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {

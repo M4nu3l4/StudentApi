@@ -1,4 +1,4 @@
-﻿// Data/StudentContext.cs
+﻿
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using StudentApi.Models;
