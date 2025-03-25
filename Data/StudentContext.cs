@@ -10,5 +10,8 @@ namespace StudentApi.Data
         public StudentContext(DbContextOptions<StudentContext> options) : base(options) { }
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<StudentProfile> StudentProfiles { get; set; }
+
     }
 }
